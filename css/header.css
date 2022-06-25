@@ -1,0 +1,175 @@
+main {
+  background: var(--cor_3);
+  padding: 0 2rem 6rem 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main_img img{
+  display: block;
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  max-width: 1408px;
+  padding: 1.875rem 0;
+}
+
+.header {
+  border-bottom: 1px solid #f8f4f4;
+  margin-bottom: 30px;
+}
+
+.header .menu_mobile {
+  width: 40px;
+  display: none;
+}
+
+.header_logo {
+  padding-right: 6.25rem;
+  width: 250px;
+}
+
+.navbar {
+  display: flex;
+  gap: 2.25rem;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar li,
+a {
+  font: normal 400 1rem Inter;
+  color: var(--cor_5);
+  line-height: 19px;
+  text-decoration: none;
+  list-style-type: none;
+  position: relative;
+}
+
+.navbar li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  transition: 0.3s;
+  background-color: var(--cor_5);
+}
+
+.navbar li a:hover::after {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1408px;
+}
+
+.main_text .main_title {
+  font: normal 700 2.625rem Inter;
+  line-height: 63px;
+  width: 70%;
+  color: var(--cor_5);
+  margin-right: 0;
+}
+
+.main_text .main_paragraph {
+  color: var(--cor_5);
+  width: 64%;
+  margin-top: 34px;
+  font: normal 400 1rem Inter;
+  line-height: 24px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--cor_4);
+  color: var(--cor_5);
+  padding: 1rem 2rem;
+  font-weight: 700;
+  max-width: max-content;
+  align-items: center;
+  margin-top: 34px;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background: var(--cor_9);
+}
+
+.content .main_img {
+  width: 50%;
+  margin-top: 30px;
+}
+
+/* Exemplo abaixo como estilizar um icone */
+.icon {
+  color: #248de9;
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 800px) {
+  .content {
+    display: block;
+  }
+  .main_text .main_title {
+    width: 100%;
+  }
+  .main_text .main_paragraph {
+    width: 70%;
+  }
+
+  .content .main_img {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .header_logo {
+    padding-right: 2.5rem;
+    width: 150px;
+  }
+  .navbar {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    gap: 2rem;
+    border: 0;
+  }
+  .header .menu_mobile {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+  .main_text .main_title {
+    font: normal 700 1.75rem Inter;
+  }
+
+  .main_text .main_paragraph {
+    display: none;
+  }
+  .content .main_img img {
+    width: 100%;
+  }
+  .navbar li a:hover::after {
+    display: none;
+  }
+}

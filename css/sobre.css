@@ -1,0 +1,36 @@
+.sobre {
+    padding: 4rem 2rem;
+    margin: 0 auto;
+}
+
+.sobre h2 {
+    font-size: 2.625rem;
+    letter-spacing: 0.155em;
+    line-height: 63px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.sobre p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin-top: 1rem;
+    line-height: 25px;
+    color: var(--cor_1);
+}
+
+@media (max-width: 600px) {
+    .sobre h2 {
+        font-size: 2rem;
+        line-height: 48px;
+    }
+    .sobre p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .sobre p:nth-child(3) {
+        display: none;
+    }
+}

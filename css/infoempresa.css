@@ -1,0 +1,169 @@
+.info_empresa {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: var(--cor_5);
+  padding: 4rem;
+}
+
+.info h2 {
+  font: normal 700 2.625rem Inter;
+  line-height: 63px;
+}
+
+.info p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150.02%;
+  color: var(--cor_2);
+}
+
+.btn_sucundario {
+  padding: 1rem 4rem;
+  display: inline-block;
+  background-color: var(--cor_4);
+  color: var(--cor_5);
+  font-weight: 700;
+  margin-top: 34px;
+  border-radius: 8px;
+}
+
+.btn_sucundario:hover {
+  background: var(--cor_9);
+}
+
+.info_block {
+  display: flex;
+  gap: 1rem;
+}
+
+.gestao {
+  background: linear-gradient(#0c78d7, #439dec, #0c78d7);
+}
+
+.gerenciamento {
+  background: linear-gradient(180deg, #ffffff 0%, #eeeeee 53.65%, #ffffff 100%);
+}
+
+.info_item {
+  padding: 2rem 1.2rem;
+  width: 272px;
+  border-radius: 15.2702px;
+}
+
+.icon img {
+  display: block;
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: 100%;
+  background: rgba(253, 253, 253, 0.35);
+}
+
+.briefcase img {
+  display: block;
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: 100%;
+  background: rgba(186, 186, 186, 0.35);
+}
+
+.gestao h3 {
+  font-weight: 400;
+  font-size: 15.27px;
+  line-height: 22.91px;
+  color: var(--cor_5);
+  margin-top: 1rem;
+}
+
+.gestao p {
+  font-size: 11.45px;
+  margin-top: 1rem;
+  font-weight: 700;
+  line-height: 17.18px;
+  color: var(--cor_5);
+}
+
+.gerenciamento h3 {
+  font-weight: 400;
+  font-size: 15.27px;
+  line-height: 22.91px;
+  color: var(--cor_1);
+  margin-top: 1rem;
+}
+
+.gerenciamento p {
+  font-size: 11.45px;
+  font-weight: 700;
+  line-height: 17.18px;
+  color: var(--cor_10);
+  margin-top: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .info {
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .info_empresa {
+    gap: 3rem;
+  }
+  .info {
+    margin-bottom: 0rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .info_empresa {
+    padding: 2rem;
+    justify-content: center;
+  }
+  .info_block {
+    gap: 1rem;
+  }
+  .info {
+    margin-right: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .info h2 {
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  .info p {
+    font-size: 1.04rem;
+    text-align: start;
+  }
+}
+@media (max-width: 578px) {
+  .info_block {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .info_empresa {
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  .info {
+    justify-content: center;
+    text-align: center;
+  }
+  .info h2 {
+    font-size: 1.5rem;
+    line-height: 42px;
+  }
+  .info p {
+    font-size: 0.9rem;
+  }
+}
